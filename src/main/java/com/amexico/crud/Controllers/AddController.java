@@ -3,8 +3,6 @@ package com.amexico.crud.Controllers;
 
 import com.amexico.crud.models.UsuariosValidar;
 import com.amexico.crud.models.*;
-import com.amexico.crud.models.Conectar;
-import com.amexico.crud.models.Usuarios;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -56,7 +54,8 @@ public class AddController {
         "insert into usuarios (nombre,correo,telefono ) values (?,?,?)",
          u.getNombre(),u.getCorreo(),u.getTelefono()
         );
-         return new ModelAndView("redirect:/index.htm");
+         IndexController redirect = new IndexController();
+         return redirect.home();
         }
        
     }
