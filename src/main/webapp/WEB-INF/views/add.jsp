@@ -5,16 +5,20 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Hola desde Spring Web MVC</title>
+        <title>ADD</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     </head>
     <body>
         <div class="container">
+            
+            <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li><a href="<c:url value="/" />">Ver Miembros</a></li>
-                <li class="active">Agregar</li>
+                <li class="breadcrumb-item" ><a href="<c:url value="/" />">Ver Miembros</a></li>
+                <li class="breadcrumb-item active">Agregar</li>
             </ol>
+            </nav>
+       
             <div class="panel panel-primary">
                 <div class="panel-heading">Formulario</div>
                 <div class="panel-body">
